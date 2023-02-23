@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=chrome" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet">
+    <title>Company group</title>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <img class="logo" alt="logo" src="logo.gif" />
+      <div class="menu">
+        <div class="menuitem"><a href="index.html">Home</a></div>
+		    <div class="menuitem"><a href="profile.html">Our Profile</a></div>
+		    <div class="menuitem"><a href="portfolio.html">Portfolio</a></div>
+		    <div class="menuitem"><a href="messageus.html">Message Us</a></div>
+      </div>
+    </header>
+
+    <h1><center>Message Us</center></h1>
+      <div class="form-section">
+        <div class="container">
+          <form name="message-form" onsubmit="return validateForm()">
+            <div class="row">
+              <label for="fname">Nama</label>
+              <input type="text" id="fname" name="full-name" placeholder="Your name..">
+            </div>
+            <div class="row">
+            <div class="col-25">
+              <label for="fbdate">Tanggal Lahir</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="fbdate" name="birth-date">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+              <label for="country">Jenis Kelamin</label>
+            </div>
+            <div class="col-75">
+              <input type="radio" id="male" name="gender" value="Laki-laki" />
+              <label for="male">Laki-laki</label>
+              <input type="radio" id="female" name="gender" value="Perempuan" />
+              <label for="female">Perempuan</label>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+              <label for="messages">Pesan</label>
+            </div>
+            <div class="col-75">
+              <textarea id="messages" name="messages" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+            </div>
+            <br>
+            <div class="row">
+            <input type="submit" value="Submit">
+            </div>
+          </form>
+         </div>
+
+           
+        </div>
+      </main>
+      <script src="index.js"></script>
+      <hr/>
+      <div class="footer"> Copyright © 2023 Frozaxd</div>
+    </body>
+  </html>
